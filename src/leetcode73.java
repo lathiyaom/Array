@@ -36,47 +36,7 @@ public class leetcode73 {
         //method 2
         //this is other method to solve this problem space is o(1)
 
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        boolean fcol = false;
-        boolean frow = false;
-        for (int i = 0; i < matrix.length; i++) {
-            if (matrix[i][0] == 0)
-                frow = true;
-            break;
-        }
-        for (int i = 0; i < cols; i++) {
-            if (matrix[0][i] == 0)
-                fcol = true;
-            break;
-        }
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                if (matrix[i][j] == 0) {
-                    matrix[0][j] = 0;
-                    matrix[i][0] = 0;
-                }
-            }
-        }
-        for (int i = 1; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
-                    matrix[i][j] = 0;
-                }
-            }
-        }
-        if (frow) {
-            for (int i = 0; i < matrix.length; i++) {
-                matrix[i][0] = 0;
-            }
-        }
-        if (fcol)
-        {
-            for(int i=0;i<matrix.length;i++)
-            {
-                matrix[0][i]=0;
-            }
-        }
+
         for (int i = 0; i <matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
