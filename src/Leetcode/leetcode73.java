@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.HashSet;
 
 public class leetcode73 {

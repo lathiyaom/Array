@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
+package Leetcode;
 
 public class Leetcode1331 {
     public static void main(String[] args) {

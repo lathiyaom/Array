@@ -1,6 +1,6 @@
-import java.lang.reflect.Array;
+package Leetcode;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class leetcode54 {
     public static void main(String[] args) {
