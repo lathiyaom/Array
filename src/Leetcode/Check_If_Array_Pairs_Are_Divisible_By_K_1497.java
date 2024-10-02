@@ -20,5 +20,6 @@ public class Check_If_Array_Pairs_Are_Divisible_By_K_1497 {
         if(map[rem]!=map[comp])return false;
     }
     return true;
+
     }
 }
